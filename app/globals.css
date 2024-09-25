@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-roboto bg-light-1 text-light-800;
+  overflow-x: hidden;
+}
+
