@@ -20,8 +20,8 @@ export async function GET(req: Request) {
     const VoucherAccount: Account[] = data.accounts.filter((account: Account) => account.haveVoucher);
 
     VoucherAccount.sort((a, b) => {
-      let ValueSortA = a[sortBy as keyof Account];
-      let ValueSortB = b[sortBy as keyof Account];
+      const ValueSortA = a[sortBy as keyof Account];
+      const ValueSortB = b[sortBy as keyof Account];
 
       if ((ValueSortA ?? Infinity) < (ValueSortB ?? Infinity)) return order === "asc" ? -1 : 1;
       if ((ValueSortA ?? Infinity) > (ValueSortB ?? Infinity)) return order === "asc" ? 1 : -1;

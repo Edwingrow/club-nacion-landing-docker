@@ -18,7 +18,7 @@ export async function GET(req: Request) {
 
     const data: AccountsData = accountsData;
 
-    let accounts: Account[] = data.accounts.filter((account: Account) => {
+    const accounts: Account[] = data.accounts.filter((account: Account) => {
       return account.tags && account.tags.some((tag) => tags.includes(tag.name));
     });
 

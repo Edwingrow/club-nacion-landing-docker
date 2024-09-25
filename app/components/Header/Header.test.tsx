@@ -1,11 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import Header from './Header';
-import { BellIcon } from '../Icons/BellIcon';
-import HamburguerMenuIcon from '../Icons/HamburgerMenuIcon';
-import { HearIcon } from '../Icons/HearIcon';
-import { NacionIconLogo } from '../Icons/NacionIconLogo';
-import { SearchInput } from '../Icons/SearchInput';
-import { SmileIcon } from '../Icons/SmileIcon';
 
 jest.mock('../Icons/BellIcon', () => ({
   BellIcon: jest.fn(() => <div data-testid="bell-icon" />),
